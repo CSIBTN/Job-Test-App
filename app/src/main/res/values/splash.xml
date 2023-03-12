@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TestCaseMiniGame.Starting" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.TestCaseMiniGame</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/star_badge_ic</item>
+    </style>
+</resources>

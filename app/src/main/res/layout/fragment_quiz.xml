@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImageViewWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivQuestionImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/question_image_desc"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvQuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:gravity="center"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@+id/cvImageViewWrapper" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFirstAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:background="@color/answer_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/answerTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionField" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSecondAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:background="@color/answer_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/answerTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionField" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvThirdAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:background="@color/answer_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/answerTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstAnswer" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFourthAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:background="@color/answer_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/answerTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecondAnswer" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFifthAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:background="@color/answer_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/answerTextSize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThirdAnswer" />
+
+    <EditText
+        android:id="@+id/etEnteredAnswer"
+        android:layout_width="@dimen/answerViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/answerViewMargin"
+        android:autofillHints=""
+        android:hint="@string/answer_input_hint"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnsweredButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvImageViewWrapper" />
+
+    <Button
+        android:id="@+id/btnAnsweredButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/answered_button_text"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFifthAnswer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

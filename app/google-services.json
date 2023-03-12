@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42189302698",
+    "project_id": "mini-game-test-75eaf",
+    "storage_bucket": "mini-game-test-75eaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42189302698:android:2880147fedbffad18859d3",
+        "android_client_info": {
+          "package_name": "com.example.testcaseminigame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42189302698-8gbh165pj2g3o0v5401g8ep6bi482200.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARQM6Um5tH2yAmEMYVPO-F7nQMY7d8kl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42189302698-8gbh165pj2g3o0v5401g8ep6bi482200.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

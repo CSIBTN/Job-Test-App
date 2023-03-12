@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.testcaseminigame.ui.views.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_quizQuestionFragment"
+            app:destination="@id/quizQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizQuestionFragment"
+        android:name="com.example.testcaseminigame.ui.views.QuizQuestionFragment"
+        android:label="QuizQuestionFragment" >
+        <action
+            android:id="@+id/action_quizQuestionFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.testcaseminigame.ui.views.ResultsFragment"
+        android:label="ResultsFragment" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.testcaseminigame.ui.views.WebViewFragment"
+        android:label="WebViewFragment" />
+</navigation>

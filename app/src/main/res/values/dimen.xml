@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="answerViewWidth">160dp</dimen>
+    <dimen name="answerViewMargin">16dp</dimen>
+    <dimen name="rewardButtonMargin">4dp</dimen>
+    <dimen name="rewardButtonWidth">160dp</dimen>
+    <dimen name="welcomeMarginMain">64dp</dimen>
+    <dimen name="answerTextSize">24sp</dimen>
+    <dimen name="defaultButtonHeight">64dp</dimen>
+    <dimen name="defaultButtonWidth">200dp</dimen>
+</resources>
